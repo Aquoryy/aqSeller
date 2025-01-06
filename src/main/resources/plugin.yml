@@ -1,0 +1,13 @@
+name: aqSeller
+version: '${project.version}'
+main: org.aqu0ryy.seller.Loader
+
+api-version: '1.16'
+softdepend: [ Vault, PlaceholderAPI ]
+
+author: aqu0ryy
+description: Плагин на скупщика.
+
+commands:
+  aqseller:
+    aliases: [ aqsell, seller, sell ]

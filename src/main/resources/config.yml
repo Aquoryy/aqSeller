@@ -1,0 +1,40 @@
+database: 'seller.db' # Сюда будет сохранятся баланс скупщика.
+
+seller-settings:
+  chance: 70 # Шанс от 0 до 100 того, что скупщик с вами заторгуется.
+  balance: 1000000
+  update-balance: 86400 # Обновление баланса в секундах.
+
+cooldown-settings:
+  enabled: true
+  cooldown: 60 # В секундах.
+
+plugin-messages:
+  no-perm: '<red>У вас недостаточно прав.'
+  no-console: '<red>Команда доступна только игрокам :c'
+  admin-help:
+    - ''
+    - ' <red>/{label} <сумма> <gray>- Продать предмет.'
+    - ' <red>/{label} balance <gray>- Баланс скупщика.'
+    - ' <red>/{label} reload <gray>- Перезагрузить конфиги.'
+    - ''
+  user-help:
+    - ''
+    - ' <red>/{label} <сумма> <gray>- Продать предмет.'
+    - ''
+
+command-messages:
+  args:
+    success: '<green>Мг.. ладно, уговорил, держи свои <yellow>{money} <green>монет.'
+    deny: '<red>Не-не, так дело не пойдет. Меня не устраивает.'
+    cooldown: '<red>Сейчас нельзя! Приходи ко мне через <gold>{time}'
+    unknown-item: '<red>Эт че??? Убери это. Давай нормальные вещи.'
+    air-item: '<red>Ты че пытаешься мне воздух продать???'
+    no-integer: '<red>Аргумент должен быть числом.'
+    no-zero: '<red>Ахаха.. Я все понимаю, но давай цену побольше, мне не жалко.'
+    no-sell: '<red>Хитер бобер! Эта фигня столько не стоит. Давай нормальную цену.'
+    no-money: '<red>Ээ.. у меня сейчас на балансе <yellow>{money} <red>монет. Приходи завтра.'
+  balance:
+    success: '<green>Баланс скупщика: <yellow>{money}$'
+  reload:
+    success: '<green>Конфиги успешно перезагружены.'
